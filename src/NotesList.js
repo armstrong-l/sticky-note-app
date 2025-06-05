@@ -3,8 +3,7 @@ import Note from "./Note.js";
 
 const NotesList = (props) => {
   const keepSearchMatches = (note) => note.doesMatchSearch;
-  //OR const keepSearchMatches = (note) => note.doesMatchSearch === true;
-
+  
   const searchMatches = props.notes.filter(keepSearchMatches);
 
   const renderNote = (note) => (

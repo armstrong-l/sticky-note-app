@@ -25,10 +25,7 @@ class App extends Component {
 
     const newNotes = [newNote, ...this.state.notes];
 
-    this.setState({ notes: newNotes });
-
-    //  OR
-    //  this.setState({notes:[newNote, ...this.state.notes]})
+    this.setState({ notes: newNotes });   
   };
 
   removeNote = (clickedNoteId) => {
